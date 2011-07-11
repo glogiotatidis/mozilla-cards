@@ -1,0 +1,4 @@
+*.pyc
+.backup/
+env/
+local_settings.py
