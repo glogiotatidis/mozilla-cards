@@ -2,3 +2,4 @@
 .backup/
 env/
 local_settings.py
+media/templates/
