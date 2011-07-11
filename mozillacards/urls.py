@@ -7,7 +7,7 @@ admin.autodiscover()
 urlpatterns = patterns('',
     # Examples:
     # url(r'^$', 'mozillacards.views.home', name='home'),
-    # url(r'^mozillacards/', include('mozillacards.foo.urls')),
+    url(r'^', include('mozillacards.cardmanager.urls')),
 
     # Uncomment the admin/doc line below to enable admin documentation:
     # url(r'^admin/doc/', include('django.contrib.admindocs.urls')),
