@@ -20,10 +20,9 @@
 </div>
 
 <div id="inputdiv">
-  <form method="post" action="/generate/">
+  <form method="post" action="/">
+  {% csrf_token %}
   <input name="email" class="input-email" value="Email" onclick="this.value='';">
-  <input name="template_name" type="hidden" value="foo">
-  <input name="template_size" type="hidden" value="a4">
   <input name="submit" value="Cards Please!" type="submit" class="subscribe-submit">
   </form>
 </div>
