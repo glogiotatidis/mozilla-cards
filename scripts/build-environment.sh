@@ -7,7 +7,7 @@
 # by typing
 # ~$ source env/bin/activate
 #
-# Install script will you system packages. You need python-rsvg installed
+# Install script will you system packages. You need pyrsvg and pycairo installed
 # system wide, to convert SVGs to PDFs.
 #
 # pip and virtualenv are required
