@@ -50,7 +50,7 @@ def generate(request):
                          )
     email.attach('card-front.pdf', open(pdf_front.name).read(), 'application/pdf')
     email.attach('card-back.pdf', open(pdf_back.name).read(), 'application/pdf')
-    # email.send()
+    email.send()
 
     try:
         os.unlink(svg_back)
