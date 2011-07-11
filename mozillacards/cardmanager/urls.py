@@ -5,6 +5,7 @@ from django.conf import settings
 urlpatterns = patterns(
     "cardmanager.views",
     url("^$", "index", name="index"),
+    url("^generate/", "generate", name="generate"),
     )
 
 if settings.LOCAL_DEVELOPMENT:
