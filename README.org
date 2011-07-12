@@ -16,33 +16,34 @@ You need to have system wide installed
 6. the fonts you will be using (for svg2pdf convertion)
 
 *** Mozilla-cards application
-~$ git clone git://github.com/glogiotatidis/mozilla-cards.git
-~$ cd mozilla-cards
-~$ git checkout dev
-~$ ./scripts/build-environment.sh
-~$ source env/bin/activate
-(env)~$ cp local_settings.example.py local_settings.py
-
-edit local_settings.py
-
-(env)~$ python manage.py syncdb
-(env)~$ python migrate cardmanager
-
+1. ~$ git clone git://github.com/glogiotatidis/mozilla-cards.git
+2. ~$ cd mozilla-cards
+3. ~$ git checkout dev
+4. ~$ ./scripts/build-environment.sh
+5. ~$ source env/bin/activate
+6. (env)~$ cp local_settings.example.py local_settings.py
+7. edit local_settings.py
+8. (env)~$ python manage.py syncdb
+9. (env)~$ python migrate cardmanager
 
 ** Using
 
 1. activate the environment, if not already activated
+
    ~$ source ./env/bin/activate
 
 2. runserver
+
    (env)~$ python manage.py runsever
 
 3. Login to admin and upload a template
+
    http://127.0.0.1:8000/admin/cardmanager/template/add/
 
    You can you the demo templates from ./templates directory
 
 4. Go to frontend
+
    http://127.0.0.1:8000
 
    and order your cards by typing your email
