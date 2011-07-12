@@ -16,9 +16,15 @@ def index(request):
     return render_to_response("index.html", c)
 
 def generate(request):
-    # if not request.is_ajax():
-    #     return redirect("index")
-    template = Template.objects.get(default=True)
+    if not request.is_ajax():
+        return redirect("index")
+
+    try:
+        template = Template.objects.get(default=True)
+    except Template.DoesNotExist:
+        return HttpResponse("Something went really bad. "
+                            "Did you create templates first?"
+                            )
 
     # fetch data from mozilla wiki
     data = { 'fullname': 'John Doe',
