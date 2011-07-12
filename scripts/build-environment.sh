@@ -1,7 +1,7 @@
 #!/bin/bash
 #
 # Usage:
-# ./scripts/build-environment
+# ./scripts/build-environment.sh
 #
 # If successfully build, you can activate your environment
 # by typing
