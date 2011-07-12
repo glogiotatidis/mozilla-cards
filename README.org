@@ -1,0 +1,66 @@
+* Mozilla Business Card Creator
+** About
+This is aimple django application to dynamically generate mozilla
+branded business cards for mozilla representatives. The cards are
+generated using personal data available on mozilla wiki
+
+** Installing
+
+*** Requirements
+You need to have system wide installed
+1. python (!)
+2. pip
+3. virtualenv
+4. pycairo (for svg2pdf convertion)
+5. pyrsvg (for svg2pdf convertion)
+6. the fonts you will be using (for svg2pdf convertion)
+
+*** Mozilla-cards application
+~$ git clone git://github.com/glogiotatidis/mozilla-cards.git
+~$ cd mozilla-cards
+~$ git checkout dev
+~$ ./scripts/build-environment.sh
+~$ source env/bin/activate
+(env)~$ cp local_settings.example.py local_settings.py
+
+edit local_settings.py
+
+(env)~$ python manage.py syncdb
+(env)~$ python migrate cardmanager
+
+
+** Using
+
+1. activate the environment, if not already activated
+   ~$ source ./env/bin/activate
+
+2. runserver
+   (env)~$ python manage.py runsever
+
+3. Login to admin and upload a template
+   http://127.0.0.1:8000/admin/cardmanager/template/add/
+
+   You can you the demo templates from ./templates directory
+
+4. Go to frontend
+   http://127.0.0.1:8000
+
+   and order your cards by typing your email
+
+** Creating templates
+
+Use your favorite SVG editing application, like [[http://inkscape.org][Inkscape]], to create
+the business card you want. When design is done, you need to xml edit
+the svg: For each field that is dynamic you need to change the /id/
+attribute to match a field name of [[https://wiki.mozilla.org/Template:Remobox][Remobox]] template, like /pmail/,
+/twitter/, /name/ etc.
+
+Inkscape comes with an [[http://tavmjong.free.fr/INKSCAPE/MANUAL/html/XML.html][editor]], otherwise you can use your favorite
+text editor.
+
+When done, upload the template to the application using the
+administration interface and make sure that the new template is marked
+as default.
+
+** Contact
+ Giorgos Logiotatidis <glogiotatidis == at == sealabs.net>
