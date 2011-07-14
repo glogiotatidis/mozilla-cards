@@ -54,7 +54,7 @@ def generate(request):
     # email pdf
     email = EmailMessage('Your Mozilla Business Cards',
                          "Hi!\n\nEnjoy your new Mozilla Business Cards ;)"
-                         "\n\nBest regards,\nThe MozoCard Robot\n",
+                         "\n\nBest regards,\nThe Mozilla Card Robot\n",
                          'no-reply@mozillareps.org', # from
                          [request.POST['email']], # to
                          )
