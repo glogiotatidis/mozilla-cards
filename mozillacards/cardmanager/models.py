@@ -9,7 +9,7 @@ def svg_validator(value):
     path = os.path.join(settings.MEDIA_ROOT, value.name)
     mimetype = mimetypes.guess_type(path)[0]
     if not mimetype == 'image/svg+xml' and \
-           (mimetype == None and value.name[:-4] != ".svg"):
+           (mimetype == None and value.name[-4:] != ".svg"):
                 raise ValidationError("File not SVG")
 
     return value
