@@ -55,7 +55,7 @@ def generate(request):
     email = EmailMessage('Your Mozilla Business Cards',
                          "Hi!\n\nEnjoy your new Mozilla Business Cards ;)"
                          "\n\nBest regards,\nThe MozoCard Robot\n",
-                         'no-reply@mozilla.org', # from
+                         'no-reply@mozillareps.org', # from
                          [request.POST['email']], # to
                          )
     email.attach('card-front.pdf', open(pdf_front.name).read(), 'application/pdf')
