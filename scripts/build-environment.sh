@@ -13,8 +13,10 @@
 # pip and virtualenv are required
 
 PACKAGES="django django_extensions south"
+PIPCOMMAND="pip"
+PIPCOMMAND="pip-python"
 
 for pkg in $PACKAGES;
 do
-    pip -E env install -s $pkg;
+    $PIPCOMMAND -E env install -s $pkg;
 done
