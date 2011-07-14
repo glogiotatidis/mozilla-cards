@@ -4,6 +4,7 @@ import cairo
 import rsvg
 import tempfile
 import os
+import sys
 
 def parse_svg(svg, output, *args, **kwargs):
     svgdoc = libxml2.parseDoc(svg.read())
@@ -21,12 +22,22 @@ def parse_svg(svg, output, *args, **kwargs):
     output.close()
 
 def svg2pdf(svgfile, output):
-    surface = cairo.PDFSurface(output, 301, 195)
-    context = cairo.Context(surface)
-    rsvg.Handle(svgfile.name).render_cairo(context)
+    # something is wrong with this code on CentOS
+    # maybe an old python issue
 
-    surface.finish()
+    # surface = cairo.PDFSurface(output, 301, 195)
+    # context = cairo.Context(surface)
+    # rsvg.Handle(svgfile.name).render_cairo(context)
+
+    # surface.finish()
+    # output.close()
+
+    # workaround
+    svgfile.close()
     output.close()
+    COMMAND = "rsvg-convert -f pdf '%s' > '%s'"
+    status, output = commands.getstatusoutput(COMMAND %\
+                                              (svgfile.name, output.name))
 
 class TempFile:
     def __init__(self):
