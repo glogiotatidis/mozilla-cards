@@ -8,7 +8,6 @@ from cardmanager import common
 from cardmanager.models import Template
 
 import json
-import tempfile
 
 def index(request):
     c = {}
@@ -34,10 +33,15 @@ def generate(request):
              'identi.ca': '@johndoe',
              }
 
-    svg_back = tempfile.NamedTemporaryFile(delete=False)
-    svg_front = tempfile.NamedTemporaryFile(delete=False)
-    pdf_front = tempfile.NamedTemporaryFile(delete=False)
-    pdf_back = tempfile.NamedTemporaryFile(delete=False)
+    # cannot use that, CentOS comes with an ancient python :(
+    # svg_back = tempfile.NamedTemporaryFile(delete=False)
+    # svg_front = tempfile.NamedTemporaryFile(delete=False)
+    # pdf_front = tempfile.NamedTemporaryFile(delete=False)
+    # pdf_back = tempfile.NamedTemporaryFile(delete=False)
+    svg_back = common.TempFile()
+    svg_front = common.TempFile()
+    pdf_front = common.TempFile()
+    pdf_back = common.TempFile()
 
     # generate svg
     common.parse_svg(template.template_back, svg_back, **data)
@@ -59,10 +63,10 @@ def generate(request):
     email.send()
 
     try:
-        os.unlink(svg_back)
-        os.unlink(svg_front)
-        os.unlink(pdf_backname)
-        os.unlink(pdf_front.name)
+        svg_back.delete()
+        svg_front.delete()
+        pdf_back.delete()
+        pdf_front.delete()
     except:
         pass
 

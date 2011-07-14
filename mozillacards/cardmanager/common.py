@@ -2,6 +2,8 @@
 import libxml2
 import cairo
 import rsvg
+import tempfile
+import os
 
 def parse_svg(svg, output, *args, **kwargs):
     svgdoc = libxml2.parseDoc(svg.read())
@@ -26,3 +28,33 @@ def svg2pdf(svgfile, output):
     surface.finish()
     output.close()
 
+class TempFile:
+    def __init__(self):
+        self.fd, self.filename = tempfile.mkstemp()
+        self.file = os.fdopen(self.fd, 'w+b')
+
+    @property
+    def name(self):
+        return self.filename
+
+    def read(self, size=-1):
+        return self.file.read(size)
+
+    def seek(self, where):
+        return self.file.seek(where)
+
+    def tell(self):
+        return self.file.tell()
+
+    def write(self, what):
+        return self.file.write(what)
+
+    def close(self):
+        return self.file.close()
+
+    def delete(self):
+        self.file.close()
+        try:
+            os.unlink(self.filename)
+        except:
+            pass
