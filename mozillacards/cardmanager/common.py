@@ -4,7 +4,7 @@ import cairo
 import rsvg
 import tempfile
 import os
-import sys
+import commands
 
 def parse_svg(svg, output, *args, **kwargs):
     svgdoc = libxml2.parseDoc(svg.read())
