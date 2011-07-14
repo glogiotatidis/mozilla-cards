@@ -52,9 +52,9 @@ def generate(request):
     common.svg2pdf(svg_back, pdf_back)
 
     # email pdf
-    email = EmailMessage('Your Mozilla Business Cards',
-                         "Hi!\n\nEnjoy your new Mozilla Business Cards ;)"
-                         "\n\nBest regards,\nThe Mozilla Card Robot\n",
+    email = EmailMessage('Your Mozilla Reps Business Card',
+                         "Hi!\n\nEnjoy your new Mozilla Reps Business Card ;)"
+                         "\n\nBest regards,\nThe ReMo bot\n",
                          'no-reply@mozillareps.org', # from
                          [request.POST['email']], # to
                          )
@@ -70,6 +70,6 @@ def generate(request):
     except:
         pass
 
-    data = "Check your inbox for your business cards!"
+    data = "Check your inbox for your business card!"
 
     return HttpResponse(data)
