@@ -14,7 +14,7 @@
 
 PACKAGES="django django_extensions south"
 PIPCOMMAND="pip"
-PIPCOMMAND="pip-python"
+#PIPCOMMAND="pip-python"
 
 for pkg in $PACKAGES;
 do
