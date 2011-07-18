@@ -24,7 +24,7 @@ You need to have system wide installed
 6. (env)~$ cp local_settings.example.py local_settings.py
 7. edit local_settings.py
 8. (env)~$ python manage.py syncdb
-9. (env)~$ python migrate cardmanager
+9. (env)~$ python manage.py migrate cardmanager
 
 ** Using
 
@@ -64,4 +64,4 @@ administration interface and make sure that the new template is marked
 as default.
 
 ** Contact
- Giorgos Logiotatidis <glogiotatidis == at == sealabs.net>
+ Giorgos Logiotatidis <glogiotatidis at sealabs.net>
