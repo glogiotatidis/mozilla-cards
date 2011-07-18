@@ -1,3 +1,8 @@
+@font-face {
+      font-family: "MetaBold-Roman Regular";
+      src: url("/media/MtBdRg.ttf");
+}
+
 html {
   padding: 0px;
   margin: 0px;
@@ -17,7 +22,7 @@ body {
 
 
 #logo {
-  font-family: "Yanone Kaffeesatz", "Trebuchet MS", Lucida Grande, sans-serif;
+  font-family: "MetaBold-Roman Regular", "Trebuchet MS", Lucida Grande, sans-serif;
   font-size: 100px;
   text-align: center;
   text-shadow: 1px 1px 0 #333333;
