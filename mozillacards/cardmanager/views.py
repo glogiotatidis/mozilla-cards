@@ -3,6 +3,7 @@ from django.shortcuts import render_to_response, redirect
 from django.core.context_processors import csrf
 from django.http import HttpResponse
 from django.core.mail import send_mail, EmailMessage
+from django.conf import settings
 
 from cardmanager import common
 from cardmanager.models import Template
@@ -15,7 +16,7 @@ def index(request):
     return render_to_response("index.html", c)
 
 def generate(request):
-    if not request.is_ajax():
+    if not settings.DEBUG and not request.is_ajax():
         return redirect("index")
 
     try:
@@ -26,12 +27,17 @@ def generate(request):
                             )
 
     # fetch data from mozilla wiki
-    data = { 'fullname': 'John Doe',
-             'pemail': 'jdoe@mozilla.org',
-             'website': 'http://johndoe.name',
-             'twitter': '@johndoe',
-             'identi.ca': '@johndoe',
-             }
+    try:
+        data = common.prepare_data(request.POST['email'],
+                                   eval("(%s)" % template.groups)
+                                   )
+
+    except common.FetchDataError:
+        return HttpResponse("Error fetching data. Please try again")
+
+    except common.UserDoesNotExist:
+        return HttpResponse("User does not exist! "
+                            "Are you sure you have a Remo page?")
 
     # cannot use that, CentOS comes with an ancient python :(
     # svg_back = tempfile.NamedTemporaryFile(delete=False)

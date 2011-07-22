@@ -5,10 +5,85 @@ import rsvg
 import tempfile
 import os
 import commands
+import urllib2
+import json
+
+class FetchDataError(Exception):
+    pass
+
+class UserDoesNotExist(Exception):
+    pass
+
+def prepare_data(email, groups):
+    URL = "http://wiki.mozilla.org/api.php?" \
+          "action=ask&q=[[bugzillamail::%s]]&format=json&" \
+          "po=bugzillamail|name|surname|twitter|identi.ca|website"
+    try:
+        reply = urllib2.urlopen(URL % email).read()
+
+    except:
+        raise FetchDataError
+
+    try:
+        reply = json.loads(reply)
+
+    except ValuError:
+        raise FetchDataError
+
+    try:
+        if reply['ask']['result'] == 'Success':
+            if reply['ask'].get('results', 0) == 0:
+                raise UserDoesNotExist
+
+        else:
+            raise FetchDataError
+
+    except KeyError:
+            raise FetchDataError
+
+    try:
+        data = reply['ask']['results']['items'][0]['properties']
+
+    except (KeyError, IndexError), exc:
+        print reply
+        raise
+        raise FetchDataError
+
+    # strip all data, to be safe
+
+    for key, value in data.iteritems():
+        data[key] = value.strip()
+
+    data['fullname'] = "%s %s" % (data.get('name', ''), data.get('surname', ''))
+
+    for group in groups:
+        count = 0
+        for value in group:
+            if value not in data.keys():
+                continue
+
+            key = 'group-%s-item-%s-name' % (groups.index(group),
+                                              count
+                                              )
+            data[key] = value
+
+            key = 'group-%s-item-%s-value' % (groups.index(group),
+                                              count
+                                              )
+            data[key] = data.get(value, '')
+
+            count += 1
+
+    return data
 
 def parse_svg(svg, output, *args, **kwargs):
     svgdoc = libxml2.parseDoc(svg.read())
 
+    # set default values for data
+    for node in svgdoc.xpathEval("//*[@default]"):
+        node.setContent(node.hasProp("default").content)
+
+    # set values for user
     for key in kwargs.keys():
         try:
             field = svgdoc.xpathEval("//*[@id='%s']" % key)[0]
