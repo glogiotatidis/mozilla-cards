@@ -12,7 +12,7 @@
 #
 # pip and virtualenv are required
 
-PACKAGES="django django_extensions south"
+PACKAGES="django django_extensions south simplejson"
 PIPCOMMAND="pip"
 #PIPCOMMAND="pip-python"
 

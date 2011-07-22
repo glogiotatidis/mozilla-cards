@@ -6,7 +6,7 @@ import tempfile
 import os
 import commands
 import urllib2
-import json
+import simplejson as json
 
 class FetchDataError(Exception):
     pass
