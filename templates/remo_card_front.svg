@@ -246,7 +246,10 @@
        x="194.61183"
        y="135.95801"
        style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:MetaBook-Roman;-inkscape-font-specification:MetaBook-Roman"
-       default="">@twitterhandle</tspan></text>
+       default=""
+       prepend="@"
+       append=""
+       force_lowercase="">@twitterhandle</tspan></text>
   <text
      xml:space="preserve"
      style="font-size:10.00000095px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;color:#000000;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate;font-family:Yanone Kaffeesatz;-inkscape-font-specification:Yanone Kaffeesatz"
@@ -272,7 +275,10 @@
        x="194.51984"
        y="147.32339"
        style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:MetaBook-Roman;-inkscape-font-specification:MetaBook-Roman"
-       default="">@indenticahandle</tspan></text>
+       default=""
+       prepend="@"
+       append=""
+       force_lowercase="True">@indenticahandle</tspan></text>
   <text
      xml:space="preserve"
      style="font-size:12px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;color:#000000;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate;font-family:Yanone Kaffeesatz;-inkscape-font-specification:Yanone Kaffeesatz"
