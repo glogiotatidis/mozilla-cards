@@ -25,13 +25,13 @@
      guidetolerance="10"
      inkscape:pageopacity="0"
      inkscape:pageshadow="2"
-     inkscape:window-width="1920"
-     inkscape:window-height="1003"
+     inkscape:window-width="1680"
+     inkscape:window-height="973"
      id="namedview3133"
      showgrid="false"
      inkscape:zoom="2.0754369"
      inkscape:cx="309.4248"
-     inkscape:cy="65.217685"
+     inkscape:cy="64.254032"
      inkscape:window-x="0"
      inkscape:window-y="25"
      inkscape:window-maximized="1"
@@ -191,10 +191,11 @@
      id="text2954"
      sodipodi:linespacing="125%"><tspan
        sodipodi:role="line"
-       id="pemail"
+       id="group-0-item-0-value"
        x="148.47464"
        y="82.094673"
-       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:MetaBook-Roman;-inkscape-font-specification:MetaBook-Roman">email@domain.com</tspan></text>
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:MetaBook-Roman;-inkscape-font-specification:MetaBook-Roman"
+       default="">email@domain.com</tspan></text>
   <text
      xml:space="preserve"
      style="font-size:9px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;color:#000000;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate;font-family:Yanone Kaffeesatz;-inkscape-font-specification:Yanone Kaffeesatz"
@@ -203,10 +204,11 @@
      id="text2958"
      sodipodi:linespacing="125%"><tspan
        sodipodi:role="line"
-       id="website"
+       id="group-0-item-1-value"
        x="148.28464"
        y="94.332176"
-       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:MetaBook-Roman;-inkscape-font-specification:MetaBook-Roman">http://domain.com</tspan></text>
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:MetaBook-Roman;-inkscape-font-specification:MetaBook-Roman"
+       default="">http://domain.com</tspan></text>
   <text
      xml:space="preserve"
      style="font-size:9px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;color:#000000;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate;font-family:Yanone Kaffeesatz;-inkscape-font-specification:Yanone Kaffeesatz"
@@ -227,10 +229,11 @@
      id="text2966"
      sodipodi:linespacing="125%"><tspan
        sodipodi:role="line"
-       id="tspan2968"
+       id="group-1-item-0-name"
        x="148.92464"
        y="135.82802"
-       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:MetaBoldLF-Caps;-inkscape-font-specification:MetaBoldLF-Caps">twitter</tspan></text>
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:MetaBoldLF-Caps;-inkscape-font-specification:MetaBoldLF-Caps"
+       default="">twitter</tspan></text>
   <text
      xml:space="preserve"
      style="font-size:9.99999905px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;color:#000000;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate;font-family:Yanone Kaffeesatz;-inkscape-font-specification:Yanone Kaffeesatz"
@@ -239,10 +242,11 @@
      id="text2978"
      sodipodi:linespacing="125%"><tspan
        sodipodi:role="line"
-       id="twitter"
+       id="group-1-item-0-value"
        x="194.61183"
        y="135.95801"
-       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:MetaBook-Roman;-inkscape-font-specification:MetaBook-Roman">@twitterhandle</tspan></text>
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:MetaBook-Roman;-inkscape-font-specification:MetaBook-Roman"
+       default="">@twitterhandle</tspan></text>
   <text
      xml:space="preserve"
      style="font-size:10.00000095px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;color:#000000;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate;font-family:Yanone Kaffeesatz;-inkscape-font-specification:Yanone Kaffeesatz"
@@ -251,10 +255,11 @@
      id="text2970"
      sodipodi:linespacing="125%"><tspan
        sodipodi:role="line"
-       id="tspan2972"
+       id="group-1-item-1-name"
        x="148.22464"
        y="147.19341"
-       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:MetaBoldLF-Caps;-inkscape-font-specification:MetaBoldLF-Caps">identi.ca</tspan></text>
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:MetaBoldLF-Caps;-inkscape-font-specification:MetaBoldLF-Caps"
+       default="">identi.ca</tspan></text>
   <text
      xml:space="preserve"
      style="font-size:9.99999905px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;color:#000000;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate;font-family:Yanone Kaffeesatz;-inkscape-font-specification:Yanone Kaffeesatz"
@@ -263,10 +268,11 @@
      id="text2974"
      sodipodi:linespacing="125%"><tspan
        sodipodi:role="line"
-       id="identi.ca"
+       id="group-1-item-1-value"
        x="194.51984"
        y="147.32339"
-       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:MetaBook-Roman;-inkscape-font-specification:MetaBook-Roman">@indenticahandle</tspan></text>
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:MetaBook-Roman;-inkscape-font-specification:MetaBook-Roman"
+       default="">@indenticahandle</tspan></text>
   <text
      xml:space="preserve"
      style="font-size:12px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;color:#000000;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate;font-family:Yanone Kaffeesatz;-inkscape-font-specification:Yanone Kaffeesatz"
