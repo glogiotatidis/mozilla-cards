@@ -54,23 +54,25 @@ def prepare_data(email, groups):
 
     data['fullname'] = "%s %s" % (data.get('name', ''), data.get('surname', ''))
 
+    groupcount = 0
     for group in groups:
         count = 0
         for value in group:
             if value not in data.keys():
                 continue
 
-            key = 'group-%s-item-%s-name' % (groups.index(group),
-                                              count
-                                              )
+            key = 'group-%s-item-%s-name' % (groupcount,
+                                             count
+                                             )
             data[key] = value
 
-            key = 'group-%s-item-%s-value' % (groups.index(group),
+            key = 'group-%s-item-%s-value' % (groupcount,
                                               count
                                               )
             data[key] = data.get(value, '')
 
             count += 1
+            groupcount += 1
 
     return data
 
