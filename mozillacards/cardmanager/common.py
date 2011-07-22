@@ -72,7 +72,7 @@ def prepare_data(email, groups):
             data[key] = data.get(value, '')
 
             count += 1
-            groupcount += 1
+        groupcount += 1
 
     return data
 
