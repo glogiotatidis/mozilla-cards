@@ -91,7 +91,20 @@ def parse_svg(svg, output, *args, **kwargs):
             # we didn't find the key, ignore
             continue
 
-        field.setContent(kwargs[key])
+        content = ''
+        if field.hasProp("prepend"):
+            content += field.hasProp("prepend").content
+
+        content += kwargs[key]
+
+        if field.hasProp("append"):
+            content += field.hasProp("append").content
+
+        field.setContent(content)
+
+    # force lowercase to fields with force_lowercase attribute
+    for node in svgdoc.xpathEval("//*[@force_lowercase]"):
+        node.setContent(node.content.lower())
 
     output.write(unicode(svgdoc))
     output.close()
