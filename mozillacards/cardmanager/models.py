@@ -22,7 +22,7 @@ class Template(models.Model):
                                       validators=[svg_validator])
     template_back = models.FileField("Back", upload_to="templates/",
                                      validators=[svg_validator])
-    groups = models.CharField(max_length=1000, default='')
+    groups = models.CharField(max_length=1000, default='', blank=True, null=True)
     default = models.BooleanField(default=False)
 
     def __unicode__(self):
