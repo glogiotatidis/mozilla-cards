@@ -27,7 +27,7 @@ def prepare_data(email, groups):
     try:
         reply = json.loads(reply)
 
-    except ValuError:
+    except ValueError:
         raise FetchDataError
 
     try:
@@ -45,8 +45,6 @@ def prepare_data(email, groups):
         data = reply['ask']['results']['items'][0]['properties']
 
     except (KeyError, IndexError), exc:
-        print reply
-        raise
         raise FetchDataError
 
     # strip all data, to be safe
