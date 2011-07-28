@@ -5,7 +5,7 @@ import rsvg
 import tempfile
 import os
 import commands
-import urllib2
+import urllib
 import simplejson as json
 
 class FetchDataError(Exception):
@@ -21,7 +21,7 @@ def prepare_data(email, groups):
           "sigqa|sigpr|sigmentors|sigdev|sigsumo|sigmarketing"
 
     try:
-        reply = urllib2.urlopen(URL % urllib2.quote(email)).read()
+        reply = urllib.urlopen(URL % urllib.quote(email)).read()
 
     except:
         raise FetchDataError
