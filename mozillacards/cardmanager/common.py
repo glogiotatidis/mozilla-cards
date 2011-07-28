@@ -17,7 +17,9 @@ class UserDoesNotExist(Exception):
 def prepare_data(email, groups):
     URL = "http://wiki.mozilla.org/api.php?" \
           "action=ask&q=[[bugzillamail::%s]]&format=json&" \
-          "po=bugzillamail|name|surname|twitter|identi.ca|website"
+          "po=bugzillamail|name|surname|twitter|identi.ca|website|" \
+          "sigqa|sigpr|sigmentors|sigdev|sigsumo|sigmarketing"
+
     try:
         reply = urllib2.urlopen(URL % email).read()
 
@@ -53,6 +55,22 @@ def prepare_data(email, groups):
         data[key] = value.strip()
 
     data['fullname'] = "%s %s" % (data.get('name', ''), data.get('surname', ''))
+
+
+    # sig hardcoded
+    sigs = {'sigmentors':'Mentor',
+            'sigqa':'Quality Assurance SIG',
+            'sigpr':'Communications SIG',
+            'sigdev':'Developers SIG',
+            'sigsumo':'Support SIG',
+            'sigmarketing':'Marketing SIG',
+            }
+
+    # cannot use sigs.keys() because dicts are orderless
+    for sig in ['sigmentors', 'sigqa', 'sigpr', 'sigdev', 'sigsumo', 'sigmarketing']:
+        if data.get(sig, None) == "true":
+            data['sig'] = sigs[sig]
+            break
 
     groupcount = 0
     for group in groups:
