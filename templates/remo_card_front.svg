@@ -159,8 +159,6 @@
     <rect
        width="301.18109"
        height="194.8819"
-       rx="24.80315"
-       ry="24.80315"
        x="0"
        y="857.48029"
        id="rect2989"
@@ -189,7 +187,7 @@
        id="tspan2952"
        x="148.08965"
        y="55.192131"
-       style="font-style:italic;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:MetaBook-Roman;-inkscape-font-specification:MetaBook-Roman Italic">mozilla representative</tspan></text>
+       style="font-style:italic;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:MetaBook-Roman;-inkscape-font-specification:MetaBook-Roman Italic">Mozilla Representative</tspan></text>
   <text
      xml:space="preserve"
      style="font-size:9px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;color:#000000;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate;font-family:Yanone Kaffeesatz;-inkscape-font-specification:Yanone Kaffeesatz"
@@ -230,7 +228,7 @@
        style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:MetaBook-Roman;-inkscape-font-specification:MetaBook-Roman">http://mozillareps.org</tspan></text>
   <text
      xml:space="preserve"
-     style="font-size:10.00000095px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;color:#000000;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate;font-family:Yanone Kaffeesatz;-inkscape-font-specification:Yanone Kaffeesatz"
+     style="font-size:8px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;color:#000000;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate;font-family:Yanone Kaffeesatz;-inkscape-font-specification:Yanone Kaffeesatz"
      x="148.92464"
      y="139.82802"
      id="text2966"
@@ -243,7 +241,7 @@
        default="">twitter</tspan></text>
   <text
      xml:space="preserve"
-     style="font-size:9.99999905px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;color:#000000;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate;font-family:Yanone Kaffeesatz;-inkscape-font-specification:Yanone Kaffeesatz"
+     style="font-size:8px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;color:#000000;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate;font-family:Yanone Kaffeesatz;-inkscape-font-specification:Yanone Kaffeesatz"
      x="194.61183"
      y="139.95801"
      id="text2978"
@@ -259,7 +257,7 @@
        force_lowercase="">@twitterhandle</tspan></text>
   <text
      xml:space="preserve"
-     style="font-size:10.00000095px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;color:#000000;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate;font-family:Yanone Kaffeesatz;-inkscape-font-specification:Yanone Kaffeesatz"
+     style="font-size:8px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;color:#000000;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate;font-family:Yanone Kaffeesatz;-inkscape-font-specification:Yanone Kaffeesatz"
      x="148.22464"
      y="151.19341"
      id="text2970"
@@ -272,7 +270,7 @@
        default="">identi.ca</tspan></text>
   <text
      xml:space="preserve"
-     style="font-size:9.99999905px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;color:#000000;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate;font-family:Yanone Kaffeesatz;-inkscape-font-specification:Yanone Kaffeesatz"
+     style="font-size:8px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;color:#000000;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate;font-family:Yanone Kaffeesatz;-inkscape-font-specification:Yanone Kaffeesatz"
      x="194.51984"
      y="151.32339"
      id="text2974"
