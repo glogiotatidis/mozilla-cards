@@ -21,7 +21,7 @@ def prepare_data(email, groups):
           "sigqa|sigpr|sigmentors|sigdev|sigsumo|sigmarketing"
 
     try:
-        reply = urllib2.urlopen(URL % email).read()
+        reply = urllib2.urlopen(URL % urllib2.quote(email)).read()
 
     except:
         raise FetchDataError
