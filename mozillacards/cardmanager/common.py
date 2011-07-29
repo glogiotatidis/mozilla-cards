@@ -50,9 +50,9 @@ def prepare_data(email, groups):
         raise FetchDataError
 
     # strip all data, to be safe
-
+    # encode to utc-8
     for key, value in data.iteritems():
-        data[key] = value.strip()
+        data[key] = value.strip().encode("utf-8")
 
     data['fullname'] = "%s %s" % (data.get('name', ''), data.get('surname', ''))
 
@@ -124,7 +124,7 @@ def parse_svg(svg, output, *args, **kwargs):
     for node in svgdoc.xpathEval("//*[@force_lowercase]"):
         node.setContent(node.content.lower())
 
-    output.write(unicode(svgdoc))
+    output.write(str(svgdoc))
     output.close()
 
 def svg2pdf(svgfile, output):
