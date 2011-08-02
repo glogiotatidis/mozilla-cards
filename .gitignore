@@ -3,5 +3,4 @@
 env/
 local_settings.py
 media/templates/
-
 mozillacards/mozocard.sqlite
