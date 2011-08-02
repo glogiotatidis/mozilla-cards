@@ -42,8 +42,20 @@ function success(data) {
   <form id="usernameform">
   {% csrf_token %}
   <input name="email" class="input-email" value="Email" onclick="this.value='';">
-  <input id="submit" name="submit" type="submit" value="Cards Please " class="subscribe-submit" onclick="submitdata(); return false;">
   </form>
+</div>
+
+<div id="sigselect">
+  <select>
+    <option value="volvo">Volvo</option>
+    <option value="saab">Saab</option>
+    <option value="mercedes">Mercedes</option>
+    <option value="audi">Audi</option>
+  </select>
+</div>
+
+<div id="submitbutton">
+  <input id="submit" name="submit" type="submit" value="Cards Please " class="subscribe-submit" onclick="submitdata(); return false;">
 </div>
 
 <div id="statusbar">
