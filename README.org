@@ -1,6 +1,6 @@
 * Mozilla Business Card Creator
 ** About
-This is aimple django application to dynamically generate mozilla
+This is a simple django application to dynamically generate mozilla
 branded business cards for mozilla representatives. The cards are
 generated using personal data available on mozilla wiki
 
@@ -56,7 +56,7 @@ the svg: For each field that is dynamic you need to change the /id/
 attribute to match a field name of [[https://wiki.mozilla.org/Template:Remobox][Remobox]] template, like /pmail/,
 /twitter/, /name/ etc.
 
-Inkscape comes with an [[http://tavmjong.free.fr/INKSCAPE/MANUAL/html/XML.html][editor]], otherwise you can use your favorite
+Inkscape comes with an [[http://tavmjong.free.fr/INKSCAPE/MANUAL/html/XML.html][editor]], or you can opt to use your favorite
 text editor.
 
 When done, upload the template to the application using the
