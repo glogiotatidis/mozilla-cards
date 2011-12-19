@@ -39,6 +39,10 @@ def generate(request):
         return HttpResponse("User does not exist! "
                             "Are you sure you have a Remo page?")
 
+    except:
+        return HttpResponse("Unknown error. "
+                            "Please contact remo-webdev@lists.mozilla.org")
+
     # cannot use that, CentOS comes with an ancient python :(
     # svg_back = tempfile.NamedTemporaryFile(delete=False)
     # svg_front = tempfile.NamedTemporaryFile(delete=False)
