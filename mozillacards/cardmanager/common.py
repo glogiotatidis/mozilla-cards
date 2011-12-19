@@ -49,6 +49,11 @@ def prepare_data(email, groups):
     except (KeyError, IndexError), exc:
         raise FetchDataError
 
+    try:
+        del(data['type'])
+    except KeyError:
+        pass
+
     # strip all data, to be safe
     # encode to utc-8
     for key, value in data.iteritems():
